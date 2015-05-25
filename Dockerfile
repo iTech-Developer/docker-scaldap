@@ -2,7 +2,7 @@ FROM debian:latest
 MAINTAINER itech
 
 
-RUN echo 'deb http://ftp.us.debian.org/debian/ jessie-backports main contrib non-free' >> /etc/apt/sources.list
+RUN echo 'deb http://ftp.ca.debian.org/debian/ jessie-backports main contrib non-free' >> /etc/apt/sources.list
 
 RUN apt-get update && \
    	LC_ALL=C DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
